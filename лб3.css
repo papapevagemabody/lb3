@@ -1,6 +1,6 @@
 body {
 
-    background: #ffffff;
+    background: #cedce6;
 }
 
 .hide {
@@ -22,17 +22,29 @@ body {
     letter-spacing: 2px;
     color: #000000;
 }
+.info{
+    width: 1400px;
+    height: 250px;
+}
 .header__menu {
     position: relative;
+}
+.container{
+    text-align: center;
 }
 .header__menu .menu__btn {
     background: transparent;
     border: none;
     cursor: pointer;
 }
-.header__menu .menu__btn svg {
-    width: 25px;
-    height: 25px;
+
+.header__menu.menu__btn svg {
+    width: 250px;
+    height: 250px;
+}
+.info{
+    text-align: center;
+
 }
 .header__menu .menu__list {
     margin: 0;
@@ -55,14 +67,22 @@ body {
     color: #0c0c0c;
     text-decoration: none;
 }
-.info__title{
-        font-size: 20px;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        color:#000000 ;
+.container.header.img{
+    text-align: center;
+
 
 }
+.img{
+    margin:auto;
+}
+.info__title{
+    font-size: 20px;
+    font-weight: 400;
+    text-transform:lowercase;
+    letter-spacing: 1px;
+    color:#000000 ;
+}
+
 @keyframes menu-showing {
     from {
         transform: translateY(95%);
