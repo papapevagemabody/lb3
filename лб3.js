@@ -1,22 +1,18 @@
-var body = document.querySelector('body')
-const menuBtn = document.querySelector(".menu__button");
-const menuList = document.querySelector(".menu__list");
-
-function toogleMenuVisibility() {
-menuList.classlist.toogle("hide");
+function myFunction() {
+  document.getElementById("menu__button").classList.toggle("show");
 }
 
 
-function myImg() {
-    let elem = document.getElementById('img');
-    let style = getComputedStyle(elem);
-    if (style.display == 'none') {
-        document.getElementById('img').style.display='block'
-    } else if (style.display != 'none') {
-        document.getElementById('img').style.display='none'
-
+window.onclick = function(event) {
+  if (!event.target.matches('.menu_btn')) {
+    var dropdowns = document.getElementsByClassName("menu");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+        
+      }
     }
+  }
 }
-
-
-menuBtn.addEventListener("click", toogleMenuVisibility);
